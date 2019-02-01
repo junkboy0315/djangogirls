@@ -8,4 +8,7 @@ post detail
   <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
   <p>{{ post.text | linebreaksbr }}</p>
 </div>
+
+<a href="{% url 'post_edit' pk=post.pk %}">edit post</a>
+
 {% endblock %}
